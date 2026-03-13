@@ -17,7 +17,9 @@ app.use(cors());
 
 // Body parser
 app.use(express.json());
-
+app.get('/', (req, res) => {
+  res.send('GoSys Backend Running Successfully');
+});
 // Mount routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/alumni', require('./routes/alumniRoutes'));

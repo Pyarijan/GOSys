@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useCallback } from 'react';
 
 export const DataContext = createContext();
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://gosys-backend.onrender.com/api';
 
 export const DataProvider = ({ children }) => {
   const [years, setYears] = useState([]);

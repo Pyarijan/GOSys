@@ -6,7 +6,7 @@ import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recha
 const InDemandSkills = () => {
   const { degree, department } = useParams();
   const [topCourses, setTopCourses] = useState([]);
-  const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+  const apiUrl = import.meta.env.VITE_API_URL || 'https://gosys-backend.onrender.com/api';
 
   useEffect(() => {
     const fetchSkills = async () => {
